@@ -48,7 +48,7 @@ const ipv4      = '0.0.0.0';
 })();
 ```
 ## Dependências
-Pacotes necessários para a classe: fs, path e userid;
+Pacotes necessários para a classe: fs, path, ssh2 e userid;
 
 Esta classe foi inspirada no pacote ssh2-sftp-server, disponível em:
 https://github.com/131/ssh2-sftp-server/
