@@ -1,7 +1,7 @@
 # SFTPFunctions
 
 ## Descrição
-A classe SFTPFunctions é uma implementação do protocolo SFTP (SSH File Transfer Protocol) em JavaScript. Ela fornece uma série de métodos para manipulação de arquivos e diretórios usando o protocolo SFTP através de uma conexão segura SSH. Suporta:
+A classe SFTPFunctions é uma implementação do protocolo SFTP (SSH File Transfer Protocol) em JavaScript para linux. Ela fornece uma série de métodos para manipulação de arquivos e diretórios usando o protocolo SFTP através de uma conexão segura SSH. Suporta:
 
 ```
 REALPATH, OPENDIR, OPEN, READDIR, WRITE, CLOSE, READ, REMOVE, RMDIR, MKDIR, RENAME, STAT, LSTAT, FSTAT
