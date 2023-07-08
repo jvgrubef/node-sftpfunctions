@@ -44,8 +44,12 @@ class SFTPFunctions {
         this.sftp.on('FSTAT', (reqid, handle) => {
             this.stat('fstatSync', reqid, this.directories[handle]['reqpath'], handle);
         });
-
+        
         this.root = ROOT ?? '/';
+
+        if(!fs.statSync(this.root).isDirectory()) {
+            throw new Error(`The path '${this.root}' is not a valid directory`);
+        };
     }
     
     absolutePath(testpath) {
