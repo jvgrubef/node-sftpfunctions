@@ -193,7 +193,7 @@ class SFTPFunctions {
             directories.push('.', '..');
             directories = directories.map(item => 
                 this.linuxAttr(item, path.join(this.directories[handle]['reqpath'], item))
-            )
+            );
             
             this.directories[handle]['closed'] = true;
             this.sftp.name(reqid, directories);
